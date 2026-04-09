@@ -1,0 +1,21 @@
+# PolyShell Workaround — Apache
+# Place this file at: pub/media/.htaccess
+# Prevents PHP execution for all files uploaded to the media directory.
+
+# Disable PHP engine for everything in this directory tree
+php_flag engine off
+
+# Block direct access to any PHP-like file
+<FilesMatch "\.(php[0-9]?|phtml|phar|php3|php4|php5|php7)$">
+    Require all denied
+</FilesMatch>
+
+# Also block phar archives (PHP Archive execution vector)
+<FilesMatch "\.phar$">
+    Require all denied
+</FilesMatch>
+
+# Prevent .htaccess overrides deeper in this tree from re-enabling PHP
+Options -ExecCGI
+RemoveHandler .php .phtml .phar .php3 .php4 .php5 .php7
+RemoveType .php .phtml .phar
