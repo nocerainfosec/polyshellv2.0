@@ -439,7 +439,7 @@ polyshell-v2/
 - [Adobe Security Bulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)
 - [Adobe Security Bulletin APSB25-88](https://helpx.adobe.com/security/products/magento/apsb25-88.html)
 - [CVE-2025-54236 — SessionReaper (Flare)](https://flare.io/learn/resources/blog/sessionreaper-cve-2025-54236)
-- [Sansec — Magento PolyShell Analysis]([https://sansec.io](https://sansec.io/research/magento-polyshell))
+- [Sansec — Magento PolyShell Analysis]([https://sansec.io](https://sansec.io/research/magento-polyshell)
 - PoC original: [khadafigans/Magento-Polyshell-RCE](https://github.com/khadafigans/Magento-Polyshell-RCE)
 
 ---
